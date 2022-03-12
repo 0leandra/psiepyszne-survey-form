@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by 0leandra</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&family=Armata&display=swap" rel="stylesheet">
+<title>Psiepyszne - formularz zamówienia</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Torcik od Psiepyszne </h1>
+            <p id="description">Wypełnij formularz, aby złożyć zamówienie.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+            <label id="name-label" for="name" class="input-style">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" class="input-style" required>
+            </div>
+            <div class="form-group">
+
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="input-style" placeholder="E-mail" required>
+            </div>
+
+            <div class="form-group">
+            <label for="phone" class="input-style">Nr tel.</label>
+            <input type="tel" id="phone" pattern="([0-9]{3}-[0-9]{3}-[0-9]{3}" class="input-style" placeholder="000-000-000">
+            </div>
+
+            <div class="form-group">
+            <label for="dropdown" class="input-style">Płeć psa</label>
+            <select name="gender" class="input-style"  id="dropdown" required>
+                <option disabled selected value>Wybierz płeć</option>
+                <option value="Suczka">Suczka</option>
+                <option value="Pies">Pies</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number" class="input-style">Wiek psolenizanta</label>
+                <input type="number" id="number" name="number" min="1" max="19" class="input-style" placeholder="Wiek" required>
+                </div>
+     
+
+            <div class="form-group">
+                <p>Wybierz torcik:</p>
+                <label class="simple-text">
+                <input type="checkbox" name="cake" value="yellow" class="form-style">
+                Żółty / kukurykuma
+            </label>
+            <label class="simple-text">
+                <input type="checkbox" name="cake" value="orange" class="form-style">
+                Pomarańczowy / dla psa kiełbasa
+            </label>
+            <label class="simple-text">
+                <input type="checkbox" name="cake" value="white"
+                class="form-style">
+                Biały / tunananas
+            </label>
+
+        </div>
+
+               
+        <div class="form-group">
+            <p>Opcja dostawy</p>
+            <label class="simple-text">
+                <input type="radio" name="delivery" value="own-collection" class="form-style" checked>
+                Odbiór własny
+            </label>
+            <label class="simple-text">
+                <input type="radio" name="delivery" value="d2d" class="form-style">
+                Wysyłka (tylko Kraków i okolice)
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Uwagi do zamówienia</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Dodatkowe informacje..."></textarea>
+    
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit button">
+                Wyślij zamówienie
+            </button>
+        </div>
+
+        </form>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html><!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
